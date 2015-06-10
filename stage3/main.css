@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+#header {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    position: fixed;
+    background: rgba(255, 255, 255, .8);
+    z-index: 1000;
+    overflow: auto;
+}
+
+#header > div {
+    padding-top: 32px;
+    padding-bottom: 5px;
+}
+
+#header.nofix {
+    margin-top: -125px;
+}
+
+.css-slideshow.nofix {
+    margin-top: 125px;
+}
+
+#home {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 200%;
+    float: left;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#copyright{
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    left: 5px;
+    bottom: 0px !important;
+    z-index: 100005;
+    opacity: .8;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 2.0;
+    padding: 40px;
+}
+
+.text > .logo {
+    margin-left: -15px;
+    display: block;
+}
+
+.text > h1 {
+    padding-left: 55px;
+}
+
+.text p {
+    padding-left: 55px;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#download-buttons {
+    float: left;
+    width: 40%;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+#download-buttons img {
+    margin: auto;
+    width: 50%;
+    height: auto;
+}
+
+#download-buttons a {
+    display: block;
+}
+
+.fade:hover {
+    opacity: 0.5;
+}
+
+.icons {
+    float: right;
+    overflow: auto;
+}
+
+.icons > a {
+    padding-right: 20px;
+    display: block;
+    float: left;
+    overflow: auto;
+}
+
+.icons > a > img, .icons > a > span {
+
+    clear: left;
+    float: left;
+}
+
+.icons > a > span {
+    padding-top: 3px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+#header:hover .icons > a > span {
+    text-align: center;
+    width: 100%;
+    -margin-bottom: auto;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+    display: block;
+    border-bottom: 1px solid #484848;
+}
+
+.container > img {
+    float: right;
+    width: 30%;
+}
+
+.container > p {
+    float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-top: 50px;
+}
+
+#email {
+    font-size: 30px;
+    padding-top: 430px;
+    padding-left: 100px;
+    float: left;
+    color: white;
+}
+
+#social {
+    position: relative;
+    left: -4.24in;
+}
+
+#social img {
+    position: static;
+    float: left;
+    height: auto;
+    width: 5%;
+    margin-top: 500px;
+    padding-left: 50px;
+    color: white;
+}
+
+
+
+#slider {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#slider.fadeOut {
+    opacity: 0;
+}
+
+#dialog-window {
+    margin-top: 200px;
+    margin-right: 10%;
+    width: 600px;
+    height: 500px;
+    float: right;
+    border: 1px black solid;
+}
+
+#scrollable-content {
+    width: 600px;
+    float: right;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+/*---------------Work tiles---------------*/
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.box {
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-bottom: 25%;
+}
+
+.boxInner {
+    background-size: contain;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
+
+.boxInner .titleBox {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;  position: absolute;
+    bottom: 0;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.boxInner:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.boxInner:hover .titleBox {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+}
